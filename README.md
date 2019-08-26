@@ -1,8 +1,8 @@
 # NoteHub
-An OCR based application to help students with disabilities  have an easier time taking notes in class 
+NotHub is an optical character recognition based desktop app that converts lecture notes (or any other notes) from an image to a text format such as a pdf. It is meant to aid students with physical disabilities take notes by converting images to searchable and editable text.
 
-## About the Program
-This is a OCR program that converts lecture notes from an image to a pdf. It helps students with physical disabilities take notes by simply taking a picture to create an easily searchable document. 
+- OpenCV with Python is used for initial image processing, either by selecting files from the computer or taking live photos through webcam
+- Microsoft Azure's cognitive services are then used to convert the image into ASCII characters within text file format
+- The processed text is then converted to other file formats such as a pdf and the file is stored on the computer locally
+- Images can also be uploaded to web based platforms. In the case of the hackathon, Imgur was used.
 
-## Process
-It works by first using OpenCV to detect the rough shapes of the letters. Azure was then used to convert the image into ACSII characters. The resulting text file was converted to a pdf using python. The GUI was done through the tkinter module. 
